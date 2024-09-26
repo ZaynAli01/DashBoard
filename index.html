@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Dashboard Website</title>
+</head>
+
+<body>
+    <aside>
+        <div class="navigation pt-2">
+            <span><i class="fa-solid fa-x close-btn"></i></span>
+            <a href="#" class="text-decoration-none text-center ps-2 text-light">
+                <span><i class="fa-brands fa-apple fs-3 me-3"></i></span>
+                Brand Name
+            </a>
+            <ul class="list-unstyled mt-5">
+
+                <li class="active">
+
+                    <a href="#" class="text-decoration-none ">
+                        <span><i class="fa-solid fa-house "></i></span>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+
+                    <a href="#" class="text-decoration-none ">
+                        <span><i class="fa-solid fa-users"></i></span>
+                        Customers
+                    </a>
+                </li>
+                <li>
+
+                    <a href="#" class="text-decoration-none ">
+                        <span><i class="fa-solid fa-message"></i></span>
+                        Messages
+                    </a>
+                </li>
+                <li>
+
+                    <a href="#" class="text-decoration-none ">
+                        <span><i class="fa-solid fa-question "></i></span>
+                        Help
+                    </a>
+                </li>
+                <li>
+
+                    <a href="#" class="text-decoration-none">
+                        <span><i class="fa-solid fa-gear"></i></span>
+                        Settings
+                    </a>
+                </li>
+                <li>
+
+                    <a href="#" class="text-decoration-none ">
+                        <span><i class="fa-solid fa-lock "></i></span>
+                        Password
+                    </a>
+                </li>
+                <li>
+
+                    <a href="#" class="text-decoration-none">
+                        <span><i class="fa-solid fa-right-from-bracket "></i></span>
+                        Sing out
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+
+    </aside>
+
+    <div class="main">
+        <nav>
+            <div class="menu-bar" role="button" id="menu-bar"><i class="fa-solid fa-bars fs-4"></i></div>
+            <div class="search-box">
+                <label for="">
+                    <input type="text" placeholder="Search Here">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+            </div>
+            <div class="user-img">
+                <img src="my-passport-photo.jpg" alt="">
+            </div>
+        </nav>
+
+
+        <div class="card-box">
+            <div class="cards">
+                <div>
+                    <div class="number">1,504</div>
+                    <div class="views">Daily Views</div>
+                </div>
+                <div class="icons"><i class="fa-regular fa-eye"></i></div>
+            </div>
+
+            <div class="cards">
+                <div>
+                    <div class="number">80</div>
+                    <div class="views">Sales</div>
+                </div>
+                <div class="icons"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+
+            <div class="cards">
+                <div>
+                    <div class="number">284</div>
+                    <div class="views">Comments</div>
+                </div>
+                <div class="icons"><i class="fa-regular fa-message"></i></div>
+            </div>
+
+            <div class="cards">
+                <div>
+                    <div class="number">$7,842</div>
+                    <div class="views">Earning</div>
+                </div>
+                <div class="icons"><i class="fa-solid fa-money-bill-wave"></i></div>
+            </div>
+
+        </div>
+
+        <div class="chats-box">
+            <div class="dounet-chat">
+                <canvas id="myChart">
+
+                </canvas>
+            </div>
+            <div class="line-chat">
+                <canvas id="myChart2">
+                    
+                </canvas>
+            </div>
+        </div>
+
+
+        <!-- =====================table============================ -->
+        <div class="table-box">
+            <div class="table-div p-3">
+                <div class="recent-orders d-flex justify-content-between mb-5">
+                    <h4>Recent Orders</h4>
+                    <button class="btn">View all</button>
+                </div>
+                <table class="table overflow-hidden">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Payment</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Mobile</th>
+                            <td>$1200</td>
+                            <td>Paid</td>
+                            <td><span class="delivered">Delivered</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Airpords</th>
+                            <td>$1300</td>
+                            <td>Unpaid</td>
+                            <td><span class="inprocess ">Inprocess</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Laptops</th>
+                            <td>$1400</td>
+                            <td>Paid</td>
+                            <td><span class="return ">Return</span></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Mobile</th>
+                            <td>$1200</td>
+                            <td>Paid</td>
+                            <td><span class="delivered ">Delivered</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Airpords</th>
+                            <td>$1300</td>
+                            <td>Unpaid</td>
+                            <td><span class="inprocess ">Inprocess</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Laptops</th>
+                            <td>$1400</td>
+                            <td>Paid</td>
+                            <td><span class="return ">Return</span></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Mobile</th>
+                            <td>$1200</td>
+                            <td>Paid</td>
+                            <td><span class="delivered">Delivered</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Airpords</th>
+                            <td>$1300</td>
+                            <td>Unpaid</td>
+                            <td><span class="inprocess">Inprocess</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Laptops</th>
+                            <td>$1400</td>
+                            <td>Paid</td>
+                            <td><span class="return">Return</span></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Mobile</th>
+                            <td>$1200</td>
+                            <td>Paid</td>
+                            <td><span class="delivered ">Delivered</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Airpords</th>
+                            <td>$1300</td>
+                            <td>Unpaid</td>
+                            <td><span class="inprocess ">Inprocess</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Laptops</th>
+                            <td>$1400</td>
+                            <td>Paid</td>
+                            <td><span class="return ">Return</span></td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="recent-customer p-3">
+                <h4>Recent customer</h4>
+
+                <div class="row">
+                    <div class="col-10 d-flex justify-content-start align-items-center gx-0 p-2">
+                        <div class="customer-img">
+                            <img src="my-passport-photo.jpg" alt="">
+                        </div>
+                        <div class="col ms-2 customer-names d-flex align-items-center">
+                            <p class="mb-0">Hammad<br><span>Pakistan</span></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-10 d-flex justify-content-start align-items-center gx-0 p-2">
+                        <div class="customer-img">
+                            <img src="https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="col ms-2 customer-names d-flex align-items-center">
+                            <p class="mb-0">Jonas Vang<br><span>Germany</span></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-10 d-flex justify-content-start align-items-center gx-0 p-2">
+                        <div class="customer-img">
+                            <img src="https://plus.unsplash.com/premium_photo-1664536392896-cd1743f9c02c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="col ms-2 customer-names d-flex align-items-center">
+                            <p class="mb-0">Lucas Ayers<br><span>Malawi</span></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-10 d-flex justify-content-start align-items-center gx-0 p-2">
+                        <div class="customer-img">
+                            <img src="https://plus.unsplash.com/premium_photo-1675130119373-61ada6685d63?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="col ms-2 customer-names d-flex align-items-center">
+                            <p class="mb-0">Lyla Ellis<br><span>Australia</span></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-10 d-flex justify-content-start align-items-center gx-0 p-2">
+                        <div class="customer-img">
+                            <img src="https://plus.unsplash.com/premium_photo-1675129779554-dc86569708c8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="col ms-2 customer-names d-flex align-items-center">
+                            <p class="mb-0">Roger<br><span>Mexico</span></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-10 d-flex justify-content-start align-items-center gx-0 p-2">
+                        <div class="customer-img">
+                            <img src="https://plus.unsplash.com/premium_photo-1674777843203-da3ebb9fbca0?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="col ms-2 customer-names d-flex align-items-center">
+                            <p class="mb-0">Davis Bush<br><span>Namibia</span></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-10 d-flex justify-content-start align-items-center gx-0 p-2">
+                        <div class="customer-img">
+                            <img src="https://plus.unsplash.com/premium_photo-1668896123985-edc26d57cab3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="col ms-2 customer-names d-flex align-items-center">
+                            <p class="mb-0">Jose Roy<br><span>Belize</span></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-10 d-flex justify-content-start align-items-center gx-0 p-2">
+                        <div class="customer-img">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="col ms-2 customer-names d-flex align-items-center">
+                            <p class="mb-0">Louise Sanders<br><span>New Zealand</span></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-10 d-flex justify-content-start align-items-center gx-0 p-2">
+                        <div class="customer-img">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="col ms-2 customer-names d-flex align-items-center">
+                            <p class="mb-0">Jennifer Frazier<br><span>Belgium</span></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-10 d-flex justify-content-start align-items-center gx-0 p-2">
+                        <div class="customer-img">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D    " alt="">
+                        </div>
+                        <div class="col ms-2 customer-names d-flex align-items-center">
+                            <p class="mb-0">Nicole<br><span>Colombia</span></p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="chat1.js"></script>
+
+
+</body>
+
+</html>
